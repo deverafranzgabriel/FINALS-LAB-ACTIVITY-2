@@ -1,0 +1,128 @@
+/* Page Background */
+body {
+  font-family: "Kalam", cursive, sans-serif;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Blackboard Container */
+.chalkboard {
+  background: rgba(43, 58, 47, 0.94);
+  padding: 22px 35px;
+  border-radius: 10px;
+  border: 16px solid #5c3a21;
+  box-shadow:
+    inset 0 0 25px rgba(0, 0, 0, 0.9),
+    0 10px 25px rgba(0, 0, 0, 0.7);
+  width: 90vw;
+  max-width: 1200px;
+  box-sizing: border-box;
+  backdrop-filter: blur(2px);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 28px;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+
+.chalk-line {
+  border: none;
+  border-top: 2px dashed rgba(255, 255, 255, 0.4);
+  margin: 12px 0;
+}
+
+.control-group {
+  margin: 8px 0;
+  display: flex;
+  gap: 10px;
+}
+
+/* Input Fields */
+input {
+  flex: 1;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+/* Chalk Buttons */
+button {
+  padding: 6px 14px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffeb3b;
+  border: 2px solid #ffeb3b;
+  border-radius: 5px;
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: #ffeb3b;
+  color: #2b3a2f;
+}
+
+button.btn-warning {
+  color: #ff8a80;
+  border-color: #ff8a80;
+}
+
+button.btn-warning:hover {
+  background: #ff8a80;
+  color: #2b3a2f;
+}
+
+/* Output Box */
+.output-box {
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px dashed #80deea;
+  padding: 10px 14px;
+  border-radius: 5px;
+  min-height: 24px;
+  font-size: 1.05rem;
+  color: #80deea;
+  word-break: break-word;
+}
